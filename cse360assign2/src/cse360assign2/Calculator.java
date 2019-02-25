@@ -12,24 +12,52 @@ public class Calculator {
 		total = 0;  // not needed - included for clarity
 	}
 	
+	
+	/**
+	 * Returns total value
+	 */
+	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
+	
+	/**
+	 * Adds parameter to total value
+	 * @param value integer taken to be added to total
+	 */
 	
 	public void add (int value) {
-		
+		total = total + value;
 	}
+	
+	/**
+	 * Subtracts parameter from total value
+	 * @param value integer taken to be subtracted from total
+	 */
 	
 	public void subtract (int value) {
-		
+		total = total - value;
 	}
+	
+	/**
+	 * Multiplies parameter with total value
+	 * @param value integer taken to be multiplied with total
+	 */
 	
 	public void multiply (int value) {
-		
+		total = total * value;
 	}
 	
+	/**
+	 * Divides total value by parameter
+	 *  @param value integer taken to be divisor of total
+	 */
+	
 	public void divide (int value) {
-		
+		if(value==0)
+			total=0;
+		else
+			total = total/value;
 	}
 	
 	public String getHistory () {
